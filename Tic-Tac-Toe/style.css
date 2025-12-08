@@ -1,0 +1,88 @@
+*{
+    margin:0; 
+    padding:0; 
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #EEFFDB;
+    justify-content: center;   
+}
+
+/* ================Display and Button ====================== */
+.msg-container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+p{
+    font-size: large;
+
+}
+
+button{
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: bold;
+    background-color:#66101F;
+    border: none;
+    border-radius: 10px;
+    color:#B8D4E3;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:#3d3d3e ;
+    
+}
+
+/* =====================Main Game Buttons and Reset Button====================== */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px 
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+   
+}
+
+.game{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 60vmin;
+    gap: 10px
+    /* width: 60vmin; */
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    font-size: 50px;
+    background-color: #66101F;
+}
+ 
+.box:hover{
+      background-color: #c31f3a;   
+} 
+
+.hide{
+    display:none; 
+}
+
+
