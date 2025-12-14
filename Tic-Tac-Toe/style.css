@@ -1,88 +1,101 @@
-*{
-    margin:0; 
-    padding:0; 
-    font-family: sans-serif;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: #EEFFDB;
-    justify-content: center;   
-}
-
-/* ================Display and Button ====================== */
-.msg-container{
-    height: 100px;
+/* BODY */
+body {
+    min-height: 100vh;
+    background-color: #113537;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 10px;
 }
 
-p{
-    font-size: large;
-
+/* MAIN */
+main {
+    text-align: center;
 }
 
-button{
-    padding: 10px 20px;
-    font-size: large;
-    font-weight: bold;
-    background-color:#66101F;
+/* TITLE */
+h1 {
+    color: #FFEAD0;
+    margin-bottom: 20px;
+}
+
+/* GAME CONTAINER */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🔥 FORCE 3×3 GRID */
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 15px;
+}
+
+/* 🔥 BOX — OVERRIDES ALL BUTTON STYLES */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #7A1025;
     border: none;
-    border-radius: 10px;
-    color:#B8D4E3;
+    border-radius: 18px;
+    font-size: 3rem;
+    color: #FFEAD0;
+    cursor: pointer;
+
+    /* critical reset */
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+/* RESET BUTTON */
+#reset-btn {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: #7A1025;
+    color: #FFEAD0;
     cursor: pointer;
 }
 
-button:hover{
-    background-color:#3d3d3e ;
-    
-}
-
-/* =====================Main Game Buttons and Reset Button====================== */
-
-main{
+/* MESSAGE SCREEN */
+.msg-container {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(17, 53, 55, 0.95);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    gap: 10px 
-}
-
-.container{
-    height: 70vh;
-    display: flex;
     justify-content: center;
     align-items: center;
-    /* position: absolute; */
-   
 }
 
-.game{   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 60vmin;
-    gap: 10px
-    /* width: 60vmin; */
+#msg {
+    color: #FFEAD0;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.box{
-    height: 150px;
-    width: 150px;
-    font-size: 50px;
-    background-color: #66101F;
+#new-btn {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: #7A1025;
+    color: #FFEAD0;
+    cursor: pointer;
 }
- 
-.box:hover{
-      background-color: #c31f3a;   
-} 
 
-.hide{
-    display:none; 
+.hide {
+    display: none;
 }
 
 
